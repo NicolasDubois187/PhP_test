@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  margin: 0 20px
+}
+h1{
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+
+header{
+  background-color: chocolate;
+  padding: 1em 2em;
+}
+header form{
+  text-align: center;
+}
+
+#formBlog{
+  width: 80%;
+  margin: auto;
+}
+#formBlog .form-group{
+  margin-bottom: 10px;
+}
+#formBlog label{
+  display: block;
+}
+#formBlog input[type="submit"]{
+  /* text-align: right; */
+   display: block;
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+#formBlog textarea {
+  resize: none;
+}
+
+#blog{
+  width: 80%;
+  margin: auto;
+}
+#blog article h3{
+  background-color: aliceblue;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+#blog article .info{
+  font-size: 0.9em;
+}

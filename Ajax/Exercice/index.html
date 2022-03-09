@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Add/Delete users</h1>
+  <form action="./traitement.php" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name">
+
+    <label for="phone">Phone</label>
+    <input type="text" name="phone" id="phone">
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+
+    <label for="address">Address</label>
+    <input type="text" name="address" id="address">
+
+    <input type="submit" value="Add">
+  </form>
+
+  <hr>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>phone</th>
+          <th>email</th>
+          <th>address</th>
+          <th>action</th>
+        </tr>
+        <tbody>
+          <!-- <tr>
+            <th>Gab</th>
+            <th>01.02.03.04.05</th>
+            <th>monmail.email.fr</th>
+            <th>1 rue du code</th>
+          </tr> <tr>
+            <th>Gab</th>
+            <th>01.02.03.04.05</th>
+            <th>monmail.email.fr</th>
+            <th>1 rue du code</th>
+          </tr> -->
+        </tbody>
+      </thead>
+    </table>
+</body>
+</html>

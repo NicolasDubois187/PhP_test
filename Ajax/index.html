@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ajax !</h1>
+
+    <h2>GitHub API</h2>
+    <form id="formGitHub">
+      <label for="name">Personne à rechercher :</label>
+      <input type="text" name="name" id="name" autocomplete="off" />
+      <input type="submit" value="Va chercher !" />
+    </form>
+
+    <h2>XMLHttpRequest</h2>
+    <div class="wrapper xml"></div>
+
+    <h2>Fetch</h2>
+    <div class="wrapper fetch"></div>
+
+    <h2>Async/Await</h2>
+    <div class="wrapper async"></div>
+
+    <!---------------------------------------------------------------------------------->
+
+    <form id="connexion" action="./traitement.php" method="post">
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" />
+
+      <input type="submit" value="log in" />
+    </form>
+    <div class="wrapper connect"></div>
+    <hr />
+  </body>
+</html>

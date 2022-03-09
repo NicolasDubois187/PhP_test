@@ -1,0 +1,42 @@
+body{
+  background-color: rgb(50, 120, 148);
+}
+h1{
+  text-transform: uppercase;
+}
+form{
+  margin: 30px auto;
+  text-align: center;
+}
+table{
+  border: 1px solid black;
+  margin: 30px auto
+}
+thead tr{
+  color: white !important;
+  background-color: teal !important;
+  text-transform: uppercase !important;
+}
+tr:nth-child(even){
+  background-color: lightcyan;
+}
+tr:nth-child(odd){
+  /* color: whitesmoke; */
+  background-color: gainsboro;
+}
+th{
+  padding: 0.5em
+}
+.btn{
+  border: 1px solid black;
+  box-shadow:  1px 1px 2px grey;
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn.delete{
+  background-color: rgb(241, 114, 114);
+}
+.btn.delete:active{
+    background-color: rgb(240, 87, 87);
+}
