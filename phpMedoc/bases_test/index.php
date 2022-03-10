@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="app.js"></script> -->
     <title>Document</title>
 </head>
 <body>
@@ -108,14 +109,34 @@ echo"somme du tableau = " .  array_multisum($students) . " moyenne du tableau = 
 echo "<br>";
 echo "<br>";
 
+$sommeClasse = 0;
+
 for ($i = 0; $i < $studentsLength; $i++) {
-    for ($v = 0; $v < count($students[$i]); $v++);{
-        echo"somme ligne = " . array_sum($students[$i]) . " moyenne =" . array_sum($students[$i])/$studentsLength;
+    // $somme = 0;
+    
+    for ($v = 0; $v < count($students[$i]); $v++) {
+        $somme = 0;
+        $somme += $students[$i][$v];
+        // echo"somme ligne = " . array_sum($students[$i]) . " moyenne =" . array_sum($students[$i])/$studentsLength;
         echo "<br>";
 
     }
+    // echo $somme;
+    // echo "<br>";
+    
+    $average = $somme / count($students[$i]);
+    $sommeClasse += $average;
+    echo $average;
+    echo "<br>";
 }
+echo "<br>";
+echo $sommeClasse / $studentsLength;
 
 ?>
+
+<ul>
+<li></li>
+</ul>
+
 </body>
 </html>
